@@ -52,7 +52,7 @@ public class EmailTest {
 	public void sendEmail(String toEmail) throws AddressException, MessagingException {
 		Message message = new MimeMessage(session);
 		message.setFrom(new InternetAddress(appPropertiesLoader.getFrom()));
-		message.addRecipients(Message.RecipientType.TO, InternetAddress.parse("jaganiyamaulik2@gmail.com"));
+		message.addRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
 		message.addRecipients(Message.RecipientType.CC, InternetAddress.parse(appPropertiesLoader.getCcList()));
 		message.setSubject(appPropertiesLoader.getEmailSubjectTemplate());
 		BodyPart messageBodyPart = new MimeBodyPart();

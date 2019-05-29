@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @SpringBootApplication
-public class ComTestEmailApplication {
+public class TestEmailApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComTestEmailApplication.class, args);
+		SpringApplication.run(TestEmailApplication.class, args);
 	}
 
 }
